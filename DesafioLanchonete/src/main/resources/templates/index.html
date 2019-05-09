@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="ISO-8859-1">
+<title>HAMBURGUERIA DEXTRA</title>
+</head>
+<body>
+<h1>Lista de Lanches</h1>
+<table border="1">
+	<tr>
+		<th>Nome</th>
+		<th>Email</th>
+		<th>CPF</th>
+		<th>Telefone</th>
+	</tr>
+	
+	<tr th:each="lanche : ${lanches}">
+		<td th:text="${lanche.nome}"></td>
+	</tr>
+</table>
+
+</body>
+</html>
